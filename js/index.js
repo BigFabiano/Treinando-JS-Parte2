@@ -32,10 +32,10 @@ function calcular(){
 }
 //calculaMedia
 function calculaMedia(){
-    let nota1 = parseInt(document.querySelector('#nota1').value);
-    let nota2 = parseInt(document.querySelector('#nota2').value);
-    let nota3 = parseInt(document.querySelector('#nota3').value);
-    let nota4 = parseInt(document.querySelector('#nota4').value);
+    let nota1 = parseFloat(document.querySelector('#nota1').value);
+    let nota2 = parseFloat(document.querySelector('#nota2').value);
+    let nota3 = parseFloat(document.querySelector('#nota3').value);
+    let nota4 = parseFloat(document.querySelector('#nota4').value);
 
     let media = (nota1 + nota2 + nota3 + nota4) / 2;
 
@@ -50,7 +50,7 @@ function calculaMedia(){
         document.querySelector('.h2media').innerHTML = 'Aluno de  ' +  '<span>' + ' R E C U P E R A Ç Ã O  ! ' + '</span>';
     }if(media >= 6){
         document.querySelector('.h2media').innerHTML = 'Aluno ' +  '<span>' + ' A P R O V A D O  ! ' + '</span>';
-    }else{
+    }else if(media < 5){
         document.querySelector('.h2media').innerHTML = 'Aluno ' +  '<span>' + ' R E P R O V A D O  ! ' + '</span>';
     }
 }

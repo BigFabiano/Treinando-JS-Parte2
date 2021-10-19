@@ -1,13 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Treinando JavaScript</title>
     <link rel="stylesheet" href="assets/bootstrap/bootstrap.min.css" />
     <link rel="stylesheet" href="assets/estilo.css" />
-  
   </head>
   <body>
     <div class="topo">
@@ -19,7 +18,7 @@
 
             <span class="switch-button"></span>
             <label class="switch">
-            <span class="switch-text1">Dark</span></label
+              <span class="switch-text1">Dark</span></label
             >
           </div>
         </label>
@@ -35,7 +34,9 @@
           <div id="box">
             <input type="text" id="n1" placeholder="Digite um número" />
             <input type="text" id="n2" placeholder="Digite outro número" />
-            <button onclick="calcular()" class="btn btn-secondary">Calcular</button>
+            <button onclick="calcular()" class="btn btn-secondary">
+              Calcular
+            </button>
             <h2 class="subtitulo">
               Resultado:
               <p id="res">00</p>
@@ -44,35 +45,66 @@
 
           <div id="box2">
             <h2 class="subtitulo">Tabuada</h2>
-            <input id="n5" type="text" name="n5" placeholder="Digite a tabuada">
-            <button onclick="mostrar()" class="btn btn-secondary">Mostrar</button>
+            <input
+              id="n5"
+              type="text"
+              name="n5"
+              placeholder="Digite a tabuada"
+            />
+            <button onclick="mostrar()" class="btn btn-secondary">
+              Mostrar
+            </button>
           </div>
         </div>
         <!--Principa 2-->
         <div class="principal2">
           <div id="box3">
-            
             <div id="hmedia"><h2 class="h2media">Media 4 - Notas</h2></div>
             <div id="inmedia">
-            <input id="nota1" type="text" class="stilonota" placeholder="1º nota" />
-            <input id="nota2" type="text" class="stilonota" placeholder="2º nota" />
-            <input id="nota3" type="text" class="stilonota" placeholder="3º nota" />
-            <input id="nota4" type="text" class="stilonota" placeholder="4º nota" />
-            
-          </div>
-          <div class="bt"><button onclick="calculaMedia()" class="btn btn-secondary">Média</button></div>
-          <h2 class="h2media">Sua média é : <span class="resmedia"></span></h2>
-          
+              <input
+                id="nota1"
+                type="text"
+                maxlength="1"
+                class="stilonota"
+                placeholder="1º nota"
+              />
+              <input
+                id="nota2"
+                maxlength="1"
+                type="text"
+                class="stilonota"
+                placeholder="2º nota"
+              />
+              <input
+                id="nota3"
+                maxlength="1"
+                type="text"
+                class="stilonota"
+                placeholder="3º nota"
+              />
+              <input
+                id="nota4"
+                maxlength="1"
+                type="text"
+                class="stilonota"
+                placeholder="4º nota"
+              />
+            </div>
+            <div class="bt">
+              <button onclick="calculaMedia()" class="btn btn-secondary">
+                Média
+              </button>
+            </div>
+            <h2 class="h2media">
+              Sua média é : <span class="resmedia"></span>
+            </h2>
           </div>
 
           <div id="box4">
             <div id="hmedia4">
               <h2 class="h2media">Tabuada</h2>
-              
             </div>
-            <div id="resTabuada">
-              
-            </div>
+            <div id="resTabuada"></div>
           </div>
         </div>
       </div>
