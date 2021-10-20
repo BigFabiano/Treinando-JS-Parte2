@@ -38,11 +38,15 @@ function calculaMedia(){
     let nota4 = parseFloat(document.querySelector('#nota4').value);
 
     let media = (nota1 + nota2 + nota3 + nota4) / 2;
-
+    if(nota1 > 10 || nota2 > 10 || nota3 > 10 || nota4 > 10){
+        alert('A nota deve ser entre 0 e 10');
+    }
     if(isNaN(nota1)|| isNaN(nota2)||isNaN(nota3)||isNaN(nota4)){
         alert('Digite um número VALIDO!');
     }
-    
+    //else{
+      //  document.querySelector('.h2media').innerHTML = 'Digite Nº entre '<span>+'0 e 10'+'</span>';
+   // }
     else{
     document.querySelector('.resmedia').innerHTML = media; 
     }
